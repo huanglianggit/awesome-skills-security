@@ -1,0 +1,64 @@
+name: Suggest a Resource
+description: Propose a security tool, skill, sandbox, benchmark, or reference.
+title: "[Resource] "
+labels:
+  - resource
+body:
+  - type: input
+    id: canonical_url
+    attributes:
+      label: Canonical URL
+      description: Link to the primary repository, specification, paper, or service.
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Skill security scanner
+        - Skill that audits skills
+        - Runtime isolation or policy enforcement
+        - Registry or security index
+        - Supply-chain control
+        - Benchmark or dataset
+        - Standard or security guidance
+        - Research or incident analysis
+        - Community discussion
+    validations:
+      required: true
+  - type: input
+    id: license
+    attributes:
+      label: License
+      description: SPDX identifier, source-available license, proprietary, or not applicable.
+    validations:
+      required: true
+  - type: textarea
+    id: security_value
+    attributes:
+      label: Security value
+      description: What Agent Skills risk does it address, and where is the control enforced?
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Execution and data handling
+      description: Does it execute target code, require credentials, or upload skill content?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Link tests, evaluations, a threat model, or primary documentation.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: This submission does not include live malware or a direct unsafe installation link.
+          required: true

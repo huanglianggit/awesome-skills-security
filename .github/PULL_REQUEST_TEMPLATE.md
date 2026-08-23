@@ -1,19 +1,20 @@
 ## Summary
 
-- What changed?
-- Why now?
+- Resource or correction:
+- Target section:
+- Security value:
 
-## Validation
+## Evidence
 
-- [ ] `make ci`
-- [ ] Relevant tests or manual verification completed
-- [ ] Docs updated if behavior changed
-- [ ] History entry added or updated if this changed code/workflow
-- [ ] Release notes updated if user-visible
+- Canonical source:
+- License:
+- Threat model, evaluation, or primary documentation:
 
-## Context
+## Checklist
 
-- Execution plan:
-- Product spec:
-- History entry:
-- Follow-up debt:
+- [ ] The project materially relates to Agent Skills security.
+- [ ] The description is factual and avoids unverified marketing claims.
+- [ ] Open-source status and license were verified from the repository.
+- [ ] Changed links were checked for availability and redirects.
+- [ ] The entry says whether it executes or uploads target content when relevant.
+- [ ] No live malware, credential stealer, or direct unsafe installation link was added.

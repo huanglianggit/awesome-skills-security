@@ -1,1 +1,5 @@
 blank_issues_enabled: false
+contact_links:
+  - name: Report an active security threat
+    url: https://github.com/iFurySt/awesome-skills-security/security/advisories/new
+    about: Privately report a malicious, compromised, or credential-stealing resource.
